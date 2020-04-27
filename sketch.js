@@ -28,9 +28,8 @@ function home (){
   rectMode(CENTER);
   noStroke();
 
-  button = createButton('click me');
-    button.position(windowWidth/2,2/5*windowHeight+100);
-  //bs.show();
+
+bs.show();
 
 
 //  c.addEventListener('click', event => {window.open("https://www.w3schools.com")});
@@ -67,7 +66,7 @@ class Button {
   }
   clicked(mx,my,callaback){
     if (my <this.y+20 && my > this.y -20 && mx> this.x -((1/1.2*windowWidth)/2)&& mx< this.x + ((1/1.2*windowWidth)/2)) {
-      callback;
+      window.open("https://www.w3schools.com");
     }
     console.log('click');
   }
