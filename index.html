@@ -5,17 +5,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Quiz archivi </title>
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-    }
-  </style>
+
+  <link rel="stylesheet" href="style.css">
   <script src="add-on/p5.js"></script>
-  <script src="sketch.js"></script>
+  <script defer src="sketch.js"></script>
 </head>
 
 <body>
+  <div class="container">
+    <h1 id = "titolo">Quiz Manifesti</h1>
+    <div id="question-container" class="hide">
+      <div id="question"> Question</div>
+        <div  id="answer-buttons" class ="btn-grid">
+          <button class="btn"> risposta 1 </button>
+          <button class="btn"> risposta 2 </button>
+          <button class="btn"> risposta 3 </button>
+          <button class="btn"> risposta 4 </button>
+        </div>
+    </div>
+    <div class ="controls">
+      <button id ="site-btn" class="site-btn btn"> Site </button>
+      <button id ="start-btn" class="start-btn btn"> Start </button>
+      <button id= "next-btn" class= "next-btn btn hide"> Next</button>
+      <button id= "result-btn" class= "result-btn btn hide"> Risultati </button>
+      <button id= "home-btn" class= "start-btn btn hide"> Home </button>
+
+    </div>
+  </div>
 </body>
 
 </html>
